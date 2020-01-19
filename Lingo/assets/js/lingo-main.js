@@ -1,4 +1,3 @@
-// Definining variables
 var Words = [
     "appel",
     "aldus",
@@ -534,11 +533,11 @@ function controleWoord(){
             console.log(aantalPogingen + '<' + maximalePogingen);
             aantalPogingen++;
         } else {
-            document.getElementById("resultaat").innerText="Helaas het juiste woord is " + tijdelijkWoord.toUpperCase();
+            document.getElementById("resultaat").innerText="Helaas, het juiste woord is " + tijdelijkWoord.toUpperCase();
             document.getElementById("reload").disabled=false;
         }
     } else {
-        document.getElementById("resultaat").innerText="Perfect u heeft het woord geraden!";
+        document.getElementById("resultaat").innerText="Perfect! u heeft het woord geraden!";
         document.getElementById("reload").disabled=false;
     };
 };
@@ -601,4 +600,8 @@ function nieuweBeurt() {
 
     document.getElementById("speelbord").appendChild(row);
             }
+}
+
+function letterInWoord(positie) {
+    document.getElementsByClassName("huidigeInvoer")[positie].classList.add("letterInWoord");
 }

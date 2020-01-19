@@ -27,7 +27,7 @@ input {
 }
 
 .letterGoed {
-    background: orange;
+    background: green;
     color:white;
     border-radius: 25%;
 }
